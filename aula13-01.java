@@ -1,24 +1,19 @@
-class ProgramaJava03
+class ProgramaJava01
 {
     //módulo principal com a entrada pela linha de comando
     public static void main (String entrada[])
     {
         //declaração de variáveis
-        int NumInt;
-        double NumReal, soma;
-        char Caracter;
+        int inteiro = 24;
+        char caracter = 'M';
+        double real = 1.75;
+        String frase = "Marco Aurélio";
+        boolean VF = true;
 
-        //entrada de dados
-        NumInt = Integer.parseInt(entrada[0]);
-        NumReal = Double.parseDouble(entrada[1]);
-        Caracter = (entrada[2].charAt(0));
-
-        //processamento
-        soma = (double)NumInt + NumReal;
-
-        //saida de resultados
-        System.out.println((double)NumInt + " + " + NumReal + " = " + soma + " sinal " + Caracter);
-        
+        if (VF == true)
+        {
+            System.out.println("Olá Mundo!, Eu sou o " + frase + ", tenho " + inteiro + " anos e " + real + "m de altura.");
+        }
         System.exit(0);
     }
 }

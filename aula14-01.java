@@ -1,29 +1,24 @@
-import javax.swing.*;
-
-class ProgramaJava06
+class ProgramaJava03
 {
     //módulo principal com a entrada pela linha de comando
     public static void main (String entrada[])
     {
         //declaração de variáveis
-        int n1, n2, mod;
-        double raiz1, raiz2;
-        String msg = "";
+        int NumInt;
+        double NumReal, soma;
+        char Caracter;
 
         //entrada de dados
-        n1 = Integer.parseInt(JOptionPane.showInputDialog("Digite um numero inteiro"));
-        n2 = Integer.parseInt(JOptionPane.showInputDialog("Digite outro numero inteiro"));
+        NumInt = Integer.parseInt(entrada[0]);
+        NumReal = Double.parseDouble(entrada[1]);
+        Caracter = (entrada[2].charAt(0));
 
         //processamento
-        mod = n1 % n2;
-        raiz1 = Math.sqrt(n1);
-        raiz2 = Math.sqrt(n2);
-        
+        soma = (double)NumInt + NumReal;
+
         //saida de resultados
-        msg = msg + "resto da divisao de " + n1 + " por " + n2 + " = " + mod + "\n";
-        msg = msg + "raiz quadrada de " + n1 + " = " + raiz1 + "\n";
-        msg = msg + "raiz quadrada de " + n2 + " = " + raiz2 + "\n";
-        JOptionPane.showMessageDialog(null, msg);
+        System.out.println((double)NumInt + " + " + NumReal + " = " + soma + " sinal " + Caracter);
+        
         System.exit(0);
     }
 }
