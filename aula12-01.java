@@ -1,4 +1,4 @@
-class MeuPrimeiroProgramaJava
+class ProgramaJava01
 {
     //módulo principal com a entrada pela linha de comando
     public static void main (String entrada[])
@@ -12,7 +12,7 @@ class MeuPrimeiroProgramaJava
 
         if (VF == true)
         {
-            System.out.println("Olá Mundo!, Eu sou o " + frase + ", tenho " + inteiro + "anos e " + real + "m de altura.");
+            System.out.println("Olá Mundo!, Eu sou o " + frase + ", tenho " + inteiro + " anos e " + real + "m de altura.");
         }
         System.exit(0);
     }

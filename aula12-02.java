@@ -1,4 +1,4 @@
-class MeuSegundoProgramaJava
+class ProgramaJava02
 {
     //módulo principal com a entrada pela linha de comando
     public static void main (String entrada[])
